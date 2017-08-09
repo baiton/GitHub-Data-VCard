@@ -13,7 +13,7 @@ function reqListener(){
 console.log(data);
     function myGithub(data) {
       let profile =
-    `<header class="zigzag">
+    `<header class="container title">
       <h1>${data.name}</h1>
     </header>
     <main class="wrapper zigzag">

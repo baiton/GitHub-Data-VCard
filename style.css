@@ -3,15 +3,8 @@ margin: 0px;
 padding: 0px;
 background-color: #F3F3F3;
 }
-
-@font-face {
-  font-family: VeryFineSerif;
-  src: local("Very Fine Serif"),
-       url(Very Fine Serif.ttf);
-  font-weight: bold;
-}
-
 header{
+font-family: 'Roboto Slab', serif;
 background-color: black;
 color: white;
 margin: 0px;
@@ -31,6 +24,29 @@ justify-content: center;
     font-weight: bold;
   }
 }
+
+/*Brought to you by*/
+/*https://launchforth.io/blog/post/zig-zag-borders-in-css/1205/*/
+
+.container {
+        position: relative;
+        padding: 8px 8px 32px 8px;
+        background: #1D1D1D;
+    }
+      .container:after {
+        transform: rotateX(180deg);
+        background: linear-gradient(-45deg, #1D1D1D 16px, transparent 0), linear-gradient(45deg, #1D1D1D 16px, transparent 0);
+        background-position: left-bottom;
+        background-repeat: repeat-x;
+        background-size: 32px 32px;
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -25px;
+        left: 0px;
+        width: 100%;
+        height: 32px;
+    }
 
 .wrapper{
   display: flex;
@@ -67,6 +83,7 @@ h1{
 }
 
 h2{
+  font-family: 'Roboto Slab', serif;
 
 }
 
